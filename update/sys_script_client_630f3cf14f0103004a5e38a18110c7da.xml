@@ -28,7 +28,7 @@ function addToDesc(cmdbci) {
 	var d = new Date();
     var timestr = d.toString();
    g_form.setValue('description', tempSD + "\n" + timestr + "\n CI:" + cmdbci.name);
-	g_form.addDecoration('description', 'icon-star', 'picked', 'color-green');
+	g_form.addDecoration('cmdb_ci', 'icon-star', 'picked', 'color-green');
   //g_form.save();
  
 }]]></script>
@@ -38,7 +38,7 @@ function addToDesc(cmdbci) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>630f3cf14f0103004a5e38a18110c7da</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>needit adds CI to desc</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -46,7 +46,7 @@ function addToDesc(cmdbci) {
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_630f3cf14f0103004a5e38a18110c7da</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-09-07 11:06:13</sys_updated_on>
+        <sys_updated_on>2017-09-07 11:08:23</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
