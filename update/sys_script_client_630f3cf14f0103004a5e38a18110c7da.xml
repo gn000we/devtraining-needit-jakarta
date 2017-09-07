@@ -8,7 +8,7 @@
         <field>cmdb_ci</field>
         <global>true</global>
         <messages/>
-        <name>needit adds CI to short desc</name>
+        <name>needit adds CI to desc</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
    if (isLoading || newValue === '') {
@@ -26,8 +26,8 @@
 function addToDesc(cmdbci) {
   var tempSD = g_form.getValue('description');
 	var d = new Date();
-    var n = d.toString();
-   g_form.setValue('description', tempSD + n + "\n CI:" + cmdbci.name);
+    var timestr = d.toString();
+   g_form.setValue('description', tempSD + "\n" + timestr + "\n CI:" + cmdbci.name);
   g_form.save();
  
 }]]></script>
@@ -37,15 +37,15 @@ function addToDesc(cmdbci) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>630f3cf14f0103004a5e38a18110c7da</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>needit adds CI to short desc</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>needit adds CI to desc</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_630f3cf14f0103004a5e38a18110c7da</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-09-07 11:00:49</sys_updated_on>
+        <sys_updated_on>2017-09-07 11:03:01</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
